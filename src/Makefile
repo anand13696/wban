@@ -30,10 +30,11 @@ PROJECTRELATIVE_PATH = src
 O = $(PROJECT_OUTPUT_DIR)/$(CONFIGNAME)/$(PROJECTRELATIVE_PATH)
 
 # Object files for local .cc, .msg and .sm files
-OBJS = $O/Node.o
+OBJS = $O/Bnc.o $O/Sensor.o $O/WbanPacket_m.o
 
 # Message files
-MSGFILES =
+MSGFILES = \
+    WbanPacket.msg
 
 # SM files
 SMFILES =
